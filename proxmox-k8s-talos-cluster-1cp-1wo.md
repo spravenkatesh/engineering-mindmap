@@ -1,4 +1,3 @@
-Here is the compiled, clean documentation of your Talos on Proxmox setup, optimized to be saved directly into your personal knowledge base (like Obsidian, Notion, or a Git repo).
 
 ---
 
