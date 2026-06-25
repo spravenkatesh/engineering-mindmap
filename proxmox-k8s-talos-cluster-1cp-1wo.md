@@ -3,6 +3,17 @@
 
 # Proxmox: 1-Control, 1-Worker Talos Linux Cluster Setup
 
+## Reference Topology
+
+```mermaid
+flowchart LR
+    P[Proxmox Host] --> CP[talos-cp-01<br/>Control Plane]
+    P --> W[talos-worker-01<br/>Worker]
+    CP <--> W
+    CP -.-> K8s[Kubernetes API / kube-vip]
+    W -.-> K8s
+```
+
 ## Infrastructure Specifications (Proxmox VMs)
 
 | Setting | Control Plane Node (`talos-cp-01`) | Worker Node (`talos-worker-01`) |
